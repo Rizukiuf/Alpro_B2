@@ -1,1 +1,1 @@
-Rizki Utama Fauzi - 24060121130050 - Praktikum 1
+        Rizki Utama Fauzi - 24060121130050 - Praktikum 1
