@@ -1,0 +1,44 @@
+/* Nama File 	: DeretPrima2.cpp
+   Deskripsi 	: Mencetak bilangan prima yang dapat dibentuk dari bilangan integer sembarang N (N>0)
+   Pembuat   	: Rizki Utama Fauzi - 24060121130050
+   Tgl Pembuatan: Minggu, 20-03-2022 (tanggal pembuatan c) - tanggal 27-03-2022 pindah ke cpp ini
+*/
+
+#include<stdio.h>
+
+int main(){
+
+    //kamus
+    int N, i, j, f;
+
+    //algoritma
+    printf("Program mencetak bilangan prima yang dapat dibentuk dari bilangan integer sembarang N (N>0) \n");
+    printf("Masukan untuk bilangan integer N (N>0): ");
+    scanf("%d", &N);
+    if (N <= 1) {
+        if (N <= 0) {
+            printf("N harus positif");
+        }
+        else {  //N=1
+            printf("Deret kosong bilangan prima");
+        }
+    }
+    else {
+        i = 2;  //inisialisasi
+        while (i <= N){
+            j = 2;
+            f = 2;
+            while (j <= i) {
+                if (i % j != 0) {
+                    f++;
+                }
+                j++;
+            }
+            if (f == i) {
+                printf("| %d", i);
+            }
+            i++;
+        }
+    }
+    return 0;
+}
