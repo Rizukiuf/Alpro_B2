@@ -19,7 +19,7 @@ int Palindrom (char *K)
     while ((i < j) && (K[i] == K[j])) {
         i = i + 1;
         j = j - 1;
-        //i = j or K.TabKata[i] != K.TabKata[i]
+        //i = j or K.TabKata[i] != K.TabKata[j]
     }
     return (K[i] == K[j]);
 }
